@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".utils.ThankYouActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="42dp"
+            android:textColor="@android:color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:text="Thank you!"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thankyou"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You successfully created your booking \n\n Our executive contact shortly"
+            android:textAlignment="center"
+            android:textSize="16dp"/>
+        <Button
+            android:id="@+id/back"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:text="Back"
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@drawable/btn_shape"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

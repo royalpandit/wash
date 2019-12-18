@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loginbackground"
+    android:scrollbars="none"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Steam car wash service at your doorstep"
+            android:textColor="#ffffff"
+            android:textSize="8pt" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="@dimen/card_album_radius"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/midlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/t_sign"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:background="@color/midboxcolor"
+                    android:gravity="center"
+                    android:text="PROFILE INFORMATION"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/enter_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/t_sign"
+                    android:layout_margin="10dp"
+                    android:singleLine="true"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your last Name"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/enter_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/enter_first_name"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your last Name"
+                    android:inputType="textEmailSubject"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/enter_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/enter_last_name"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your Email id"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/enter_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/enter_email"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your Mobile no."
+                    android:singleLine="true"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+
+                <Button
+                    android:id="@+id/btnregisterlogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/enter_mobile"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+
+                    android:background="@drawable/buttonborder"
+                    android:text="@string/submit"
+                    android:textSize="18sp"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+        <ProgressBar
+            android:visibility="gone"
+            android:id="@+id/progressBar_sinUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</ScrollView>

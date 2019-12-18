@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                <RelativeLayout
+                    android:id="@+id/firstlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/packageImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="250dp"
+                        />
+
+
+                    <RelativeLayout
+                        android:id="@+id/layoutsecond"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:layout_below="@+id/packageImage"
+                        android:background="@color/midboxcolor">
+
+                        <TextView
+                            android:id="@+id/packageName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:text="Silver Car Wash Package"
+                            android:textColor="@color/bluedenim"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/packageRs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/packagePirce"
+                            android:text="Rs."
+                            android:textColor="@color/buttoncolor"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/packagePirce"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="10dp"
+                            android:text="3000.00"
+                            android:textColor="@color/buttoncolor"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/layoutsecond"
+                        android:layout_margin="10dp">
+
+                        <TextView
+                            android:id="@+id/packageDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="abcd"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/lenear_lay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/packageDescription"
+                            android:layout_marginTop="20dp">
+
+                            <TextView
+                                android:id="@+id/calender"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@color/buttoncolor"
+                                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                                android:drawablePadding="-12dp"
+                                android:gravity="center_vertical|center"
+                                android:hint="Date"
+                                android:paddingLeft="4dp"
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/white"/>
+
+                            <TextView
+                                android:id="@+id/date_text"
+                                android:layout_width="0dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="8dp"
+                                android:layout_weight="1"
+                                android:background="@color/buttoncolor"
+                                android:drawableLeft="@drawable/ic_time"
+                                android:drawablePadding="-12dp"
+                                android:drawableTint="@android:color/white"
+                                android:gravity="center_vertical|center"
+                                android:hint="Time"
+                                android:paddingLeft="4dp"
+                                android:textColor="@android:color/white"
+                                android:textColorHint="@android:color/white"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_radio_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/lenear_lay"
+                            android:layout_marginTop="18dp"
+                            android:gravity="center">
+
+                            <RadioGroup
+                                android:id="@+id/radio_group_pay"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/cash"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Cash" />
+
+                                <RadioButton
+                                    android:id="@+id/phonePay"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:text="Phone Pay" />
+
+                                <RadioButton
+                                    android:id="@+id/upi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="50dp"
+                                    android:text="UPI" />
+                            </RadioGroup>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/layout_radio_btn"
+                            android:layout_alignParentBottom="true">
+
+                            <TextView
+                                android:id="@+id/text_wr"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginTop="16dp"
+                                android:fontFamily="serif"
+                                android:text="Input Address"
+                                android:textSize="20dp"
+                                android:textStyle="bold" />
+
+                            <EditText
+                                android:id="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_below="@+id/text_wr"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="8dp"
+                                android:background="@drawable/addressshape"
+                                android:gravity="left|top"
+                                android:hint="Input Your Address"
+                                android:inputType="textCapSentences|textAutoCorrect"
+                                android:paddingLeft="8dp" />
+
+                            <LinearLayout
+                                android:layout_marginTop="20dp"
+                                android:id="@+id/apply_text"
+                                android:orientation="vertical"
+                                android:layout_below="@+id/address"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Apply Promo Code:"/>
+
+                                <LinearLayout
+                                    android:layout_marginTop="10dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="horizontal"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content">
+                                    <EditText
+                                        android:paddingLeft="8dp"
+                                        android:id="@+id/appliPromoCode"
+                                        android:background="@drawable/addressshape"
+                                        android:layout_weight="8"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="35dp" />
+                                    <Button
+                                        android:id="@+id/applyPromoBtn"
+                                        android:text="Apply"
+                                        android:textColor="@android:color/white"
+                                        android:layout_marginLeft="10dp"
+                                        android:layout_width="wrap_content"
+                                        android:background="@color/buttoncolor"
+                                        android:layout_height="35dp" />
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+
+                            <Button
+                                android:id="@+id/btn_ok"
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/apply_text"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="50dp"
+                                android:background="@color/buttoncolor"
+                                android:text="Submit"
+                                android:textColor="@android:color/white"
+                                android:textSize="20dp" />
+
+
+                        </RelativeLayout>
+
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

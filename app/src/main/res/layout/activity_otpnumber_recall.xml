@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/loginbackground"
+    android:scrollbars="none"
+    tools:context=".loginregister.OTPNumberRecallActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Steam car wash service at your doorstep"
+            android:textColor="#ffffff"
+            android:textSize="8pt" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="@dimen/card_album_radius"
+            card_view:contentPadding="10dp">
+
+            <RelativeLayout
+                android:id="@+id/midlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/t_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/midboxcolor"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/otp"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/t_enteryour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_otp"
+                    android:layout_margin="20dp"
+                    android:gravity="center"
+                    android:text="@string/enteryour"
+                    android:textColor="@color/bluedenim"
+
+                    android:textSize="7pt" />
+
+                <TextView
+                    android:id="@+id/cretacc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/t_enteryour"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:text="@string/wewil"
+                    android:textColor="@color/black_overlay"
+                    android:textSize="5pt" />
+
+                <EditText
+                    android:id="@+id/editmobile_recall"
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:layout_below="@+id/cretacc"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter mobile number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <Button
+                    android:id="@+id/login_recall"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/editmobile_recall"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/buttonborder"
+                    android:text="@string/log"
+                    android:textAllCaps="false"
+                    android:textSize="24dp"
+                    android:textColor="@color/white" />
+
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+</ScrollView>

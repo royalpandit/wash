@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PrivacyActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:typeface="monospace"
+                android:fontFamily="monospace"
+                android:textColor="@android:color/black"
+                android:textColorLink="#ff0000"
+                android:autoLink="email"
+                android:lineHeight="40dp"
+                android:padding="20dp"
+                android:text=" abc@gmail.com
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                android:textAllCaps="false"
+                android:textSize="24dp" />
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

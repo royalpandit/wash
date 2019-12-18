@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Whizzwash</string>
+
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="login">Login</string>
+    <string name="wewil">we will send you one time password(OTP)</string>
+
+    <string name="enteryour">Enter your mobile number to create account</string>
+
+    <string name="otp">ONE TIME PASSSWORD(OTP)</string>
+
+    <string name="login_now">Login now !</string>
+
+    <string name="sign">SIGN UP</string>
+    <string name="submit">Submit</string>
+    <string name="pro_info">PROFILE INFORMATION</string>
+
+    <string name="log">Submit</string>
+    <string name="dont">Dont have an account?</string>
+    <string name="signup">Sign up now !</string>
+    <string name="forget">Forget Password ?</string>
+    <string name="signtext">Sign in With Social Network</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+    <string name="term"><![CDATA[Terms & Conditions]]></string>
+    <string name="facebook_app_id">428344007826671</string>
+    <string name="fb_login_protocol_scheme">fb428344007826671</string>
+
+    <!--   <string name="facebook_app_id">379545809589699</string>
+    <string name="fb_login_protocol_scheme">fb379545809589699</string>-->
+
+    <!--  //<string name="facebook_app_id">379545809589699</string>-->
+    <!--<string name="facebook_app_id">1778364132462847</string>-->
+<!--<string name="Client_ID">991871430565-7p77hrvibf2pe5lmg91svrsmhi08cbot.apps.googleusercontent.com</string>-->
+    <string name="Client_ID">994489264048-bghl71ej7vj6p8lreq9fol9mcnoipdfc.apps.googleusercontent.com</string>
+    <string name="Client_Secret">-B4Xbvwx8_JvAksfzL4MWIMb</string>
+    <string name="server_client_id">YOUR_SERVER_CLIENT_ID</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

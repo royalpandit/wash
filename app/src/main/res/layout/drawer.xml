@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="100dp"
+        android:background="@android:color/white"
+        android:id="@+id/drawer_layout">
+
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/lin_header1"
+            android:background="@drawable/img_header"
+            android:gravity="center">
+
+
+            <FrameLayout
+                android:id="@+id/fram_a"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape">
+
+            <TextView
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="-5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/userfirstWords"
+                android:text="UN"
+                android:textAlignment="center"
+                android:textSize="50dp"
+                android:textColor="@color/buttoncolor" />
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:id="@+id/userPicture" />
+
+            </FrameLayout>
+
+
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Ravi Kumar Sharma"
+                android:textColor="@color/white"
+                android:textSize="7pt"
+                android:layout_below="@+id/fram_a"
+                android:layout_marginTop="10dp"/>
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_below="@+id/lin_header1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white">
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/profile_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/profile_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/img_booking"
+                        android:gravity="center_vertical"
+                        android:text="Profile"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/bluedenim"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+                <View
+                    android:id="@+id/viewprofile"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/profile_tab"
+                    android:background="#efefef" />
+
+                <LinearLayout
+                    android:id="@+id/home_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/profile_tab"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/booking_history_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/img_booking"
+                        android:gravity="center_vertical"
+                        android:text="Booking Histoy"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/bluedenim"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/home_tab"
+                    android:background="#efefef" />
+
+                <LinearLayout
+android:visibility="gone"
+                    android:id="@+id/profil_tab"
+                    android:layout_below="@+id/view11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/change_passward_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:drawableLeft="@drawable/img_changepass"
+                        android:text="Change Password"
+                        android:textColor="@color/bluedenim"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/profil_tab"
+                    android:background="#efefef" />
+
+
+
+                <LinearLayout
+
+                    android:id="@+id/privacy_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view12"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/privacy_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/img_privacy"
+                        android:gravity="center_vertical"
+                        android:text="Privacy Policy"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/bluedenim"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+                <View
+                    android:id="@+id/view7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/privacy_tab"
+                    android:layout_marginTop="5dp"
+                    android:background="#efefef" />
+                <LinearLayout
+                    android:id="@+id/tandser_tab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/view7"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/term_contition_drawer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:drawablePadding="10dp"
+                        android:drawableLeft="@drawable/img_terms"
+                        android:gravity="center_vertical"
+                        android:text="@string/term"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/bluedenim"
+                        android:textSize="15dp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view9"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tandser_tab"
+                    android:layout_marginTop="5dp"
+                    android:background="#efefef" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tandser_tab"
+                    android:gravity="center"
+                    android:background="@color/buttoncolor"
+                    android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/sign_out"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sign Out"
+                    android:paddingBottom="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:paddingTop="20dp"
+                    android:drawablePadding="14dp"
+                    android:textSize="15dp"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:textColor="@color/white"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:id="@+id/dr_rl"></RelativeLayout>
+
+
+
+
+</RelativeLayout>

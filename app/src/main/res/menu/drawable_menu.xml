@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Booking History"
+        android:icon="@drawable/ic_history"
+        android:id="@+id/menu1"/>
+
+    <item android:title="Setting" android:id="@+id/setting"
+        android:icon="@drawable/ic_settings">
+        <menu>
+            <item android:id="@+id/subItem1"
+                android:icon="@drawable/ic_lock"
+                android:title="Change Password"/>
+            <item android:title="Privacy Policy"
+                android:icon="@drawable/ic_privacy"
+                android:id="@+id/subItem2"/>
+            <item android:title="Terms and Conditions"
+                android:icon="@drawable/ic_term"
+                android:id="@+id/subItem3"/>
+        </menu> </item>
+</menu>

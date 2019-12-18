@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/menu_layout_item"
+    tools:context=".booking.PackageDetailActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:layout_height="50dp"
+            android:layout_width="match_parent"
+            layout="@layout/toolbar"
+            android:id="@+id/toolber"/>
+        <ScrollView
+            android:layout_below="@+id/toolber"
+
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/loginbackground"
+            android:scrollbars="none"
+            >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:text="Steam car wash service at your doorstep"
+                android:textColor="#ffffff"
+                android:textSize="8pt"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                card_view:cardCornerRadius="@dimen/card_album_radius"
+                card_view:contentPadding="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/midlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/t_otp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@color/midboxcolor"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Please choose car category"
+                        android:textColor="@color/black"
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/t_enteryour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_otp"
+                        android:layout_margin="20dp"
+                        android:gravity="center"
+                        android:text="Please choose your vehicle"
+                        android:textColor="@color/bluedenim"
+
+                        android:textSize="7pt" />
+
+                    <TextView
+                        android:id="@+id/cretacc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/t_enteryour"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:visibility="gone"
+                        android:text="Lorem Ipsum is simply dummy text of the printing"
+                        android:textColor="@color/black_overlay"
+                        android:textSize="5pt" />
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/editmobile_recall"
+                        android:layout_width="match_parent"
+                        android:layout_below="@+id/cretacc"
+                        android:background="@drawable/edit_background"
+                        android:layout_margin="16dp"
+                        android:layout_height="44dp">
+
+                        <Spinner
+                            android:id="@+id/spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                        </Spinner>
+
+                    </LinearLayout>
+
+
+
+                    <Button
+                        android:id="@+id/list_submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_below="@+id/editmobile_recall"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/buttonborder"
+                        android:text="@string/log"
+                        android:textAllCaps="false"
+                        android:textSize="24dp"
+                        android:textColor="@color/white" />
+
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/left_drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginRight="-65dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/drawer"
+            android:id="@+id/drawer_include"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

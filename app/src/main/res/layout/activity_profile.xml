@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:background="@drawable/loginbackground"
+    tools:context=".loginregister.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:text="Steam car wash service at your doorstep"
+            android:textColor="#ffffff"
+            android:textSize="8pt" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            card_view:cardCornerRadius="@dimen/card_album_radius"
+          >
+
+            <RelativeLayout
+                android:id="@+id/midlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/t_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/midboxcolor"
+                    android:gravity="center"
+                    android:text="@string/pro_info"
+                    android:textColor="@color/black"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/editname"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/t_login"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your First Name"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/editlastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/editname"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your Last Name"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:id="@+id/editemailid"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/editlastname"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your Email Id"
+                    android:padding="5dp"
+                    android:inputType="textEmailAddress"
+                    android:textSize="7pt" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/editphonenum"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_below="@+id/editemailid"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/edit_background"
+                    android:hint="Enter your Mobile no."
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="7pt" />
+
+
+                <Button
+                    android:id="@+id/btnprofileinformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/editphonenum"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/buttonborder"
+                    android:text="@string/submit"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+     android:layout_marginBottom="10dp"
+    android:layout_height="wrap_content"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:id="@+id/r2"></RelativeLayout>
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_radio"
+       />
+
+    <LinearLayout
+        android:background="@drawable/adpter_shape"
+        android:layout_below="@+id/r2"
+        android:id="@+id/l2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:background="#efefef" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="14dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/bookingListTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Silver Car Wash"
+                android:textColor="@color/bluedenim" />
+
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="address"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/bluedenim"
+                />
+
+            <TextView
+                android:id="@+id/bookingListDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bookingListTitle"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/calendar"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_calendar"
+                    android:tint="@color/black" />
+
+                <TextView
+                    android:id="@+id/bookingListdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/calendar"
+                    android:text="08 June 2019"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:id="@+id/date_pic"
+                    android:layout_width="10dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/bookingListdate"
+                    android:src="@drawable/ic_time" />
+
+                <TextView
+                    android:id="@+id/bookingListtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_toRightOf="@+id/date_pic"
+                    android:text="07:56 PM"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rs."
+                        android:textColor="@color/buttoncolor" />
+
+
+                    <TextView
+                        android:id="@+id/bookingListPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="3000.00"
+                        android:textColor="@color/buttoncolor" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_status"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+           
+            android:background="@drawable/adpter_shape"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/check_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_check" />
+
+            <TextView
+                android:id="@+id/bookingListStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Confirm"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            card_view:cardCornerRadius="@dimen/card_album_radius">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstlayout">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:id="@+id/packageImage"
+                  />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:id="@+id/layoutsecond"
+                    android:layout_below="@+id/packageImage"
+                    android:background="@color/midboxcolor">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Silver Car Wash Package"
+                        android:textSize="14sp"
+                        android:layout_centerVertical="true"
+                        android:id="@+id/packageName"
+                        android:textColor="@color/bluedenim"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/packageRs"
+                        android:text="Rs."
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/buttoncolor"
+                        android:textSize="14sp"
+                        android:layout_toLeftOf="@+id/packagePirce"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/packagePirce"
+                        android:text="0"
+                        android:layout_centerVertical="true"
+                        android:textColor="@color/buttoncolor"
+                        android:textSize="15sp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="2dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_below="@+id/layoutsecond">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="abcd"
+                        android:textSize="12sp"
+                        android:id="@+id/packageDescription"/>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Book Now"
+                        android:textAllCaps="false"
+                        android:id="@+id/bookBtn"
+                        android:layout_margin="10dp"
+                        android:background="@color/buttoncolor"
+                        android:textColor="@color/white"
+                        android:layout_below="@+id/packageDescription"/>
+
+                    <Button
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:text="Back"
+                        android:textAllCaps="false"
+                        android:id="@+id/backBtn"
+                        android:background="@color/black"
+                        android:layout_margin="10dp"
+                        android:layout_below="@+id/packageDescription"
+                        android:layout_toRightOf="@+id/bookBtn"
+                        android:textColor="@color/white"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+</RelativeLayout>
